@@ -1,2 +1,2 @@
-# simple_calculator
-Just some code to make calculator
+# Simple Calculator
+Just some code to make calculator and learning C++
