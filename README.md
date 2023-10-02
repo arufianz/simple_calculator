@@ -1,2 +1,2 @@
-# Simple Calculator
-Just some code to make calculator and learning C++
+# Simple Project for Learning Purpose
+Just some code to make something and learning C++
