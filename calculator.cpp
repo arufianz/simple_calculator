@@ -6,7 +6,7 @@ int main()
     double num1;
     double num2;
     double result;
-
+        
     std::cout << "***********CALCULATOR*********** \n";
     std::cout << "Enter the operand (+ - * /): " ;
     std::cin >> op;
