@@ -6,10 +6,21 @@ int main()
     double num1;
     double num2;
     double result;
-        
+    int error = 0;
+
     std::cout << "***********CALCULATOR*********** \n";
-    std::cout << "Enter the operand (+ - * /): " ;
-    std::cin >> op;
+
+    do{
+        if (error > 0){
+            std::cout << "Enter only (+ - * /): " ;
+            
+        } else{
+            std::cout << "Enter the operand (+ - * /): " ;
+        }
+        std::cin >> op;
+        error++;
+
+    } while (op != '+' && op != '-' && op != '*' && op != '/');
 
     std::cout << "Enter the first number: ";
     std::cin >> num1;
@@ -36,6 +47,6 @@ int main()
         break;
     }
 
-    std::cout << "The result is" << result;
+    std::cout << "The result is " << result;
 
 }
