@@ -9,7 +9,6 @@ int main()
     int error = 0;
 
     std::cout << "***********CALCULATOR*********** \n";
-
     do{
         if (error > 0){
             std::cout << "Enter only (+ - * /): " ;
@@ -40,7 +39,12 @@ int main()
         result = num1 * num2;
         break;
     case '/':
-        result = num1 / num2;
+        if (num2 == 0){
+            std::cout << "Cannot divided by zero \n";
+            return 0;
+        } else {
+            result = num1 / num2;
+        }
         break;
     default:
         std::cout << "Cannot solve the problem";
@@ -48,5 +52,5 @@ int main()
     }
 
     std::cout << "The result is " << result;
-
+    return 0;
 }
